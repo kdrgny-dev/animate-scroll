@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animate-scroll with NJS</title>
+    <link rel="stylesheet" href="demo.css">
+</head>
+<body>
+    <main>
+        <div id="instructions">
+            Scroll the page to make the element change color when it passes the scrollOffset point.
+        </div>
+        <div class="vh-container">
+            <div class="vh-line">
+            </div>
+            <p class="vh-display">
+                window.innerHeight = <span id="window-height"></span>px
+            </p>
+        </div>
+        <div class="scroll-offset">
+            scrollOffset = 100px
+        </div>
+        <div class="element-container">
+            <div class="js-scroll">
+                <p>element.getBoundingClientRect().top = <span id="offset-top"></span>px</p>
+            </div>
+        </div>
+    </main>
+    <script src="demo.js"></script>
+</body>
+</html>
